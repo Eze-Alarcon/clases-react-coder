@@ -1,24 +1,14 @@
 import React from "react";
-import './cartWidget.css'
-import 'materialize-css'
+import { Badge } from '@material-ui/core';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
 function CartWidget() {
     return (
         <>
-            <div>
-
-                <span className="container--cartIcon material-icons">
-                    <i className="material-icons-outlined">shopping_cart</i>
-                </span>
-
-                <span className="cartIcon--amount red">
-                    20
-                </span>
-            </div>
-
-
-            
+            <Badge badgeContent={4} color="secondary">
+                <ShoppingCartOutlinedIcon/>
+            </Badge>
         </>
     )
 }
