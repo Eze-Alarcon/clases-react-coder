@@ -1,13 +1,15 @@
 import React from 'react'
-import '../styles/ItemCount.css'
 import Button from '@mui/material/Button';
+import '../styles/ItemCount.css'
 
-function ItemCount() {
-    const [number, setNumber] = React.useState(0)
+// initial stock
+
+function ItemCount(props) {
+    const [number, setNumber] = React.useState(props.initial)
     
-    const increase = () => (number < 5) && setNumber(number + 1)
+    const increase = () => (number < props.stock) && setNumber(number + 1)
 
-    const decrease = () => (number > 1) && setNumber(number - 1)
+    const decrease = () => (number > props.initial) && setNumber(number - 1)
 
     return (
         <div class="d4--container">
