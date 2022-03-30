@@ -1,0 +1,13 @@
+.d4--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100px;
+    width: 100%;
+}
+
+.d4--container .counter--text {
+    font-size: 25px;
+}
+
