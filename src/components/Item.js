@@ -5,20 +5,21 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import '../styles/Item.css'
 
 
 
 function Item(props) {
 
-    
+  /* En un futuro colocaremos los estilos en un theme de material UI */  
 
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="300"
-        className="cardImage"
+        sx={{
+          objectFit: "contain"
+        }}
         image={props.image}
       />
       <CardContent>
